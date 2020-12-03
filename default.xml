@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="https://github.com/yoannsculo"/>
+    <remote name="buildroot" fetch="git://git.buildroot.net"/>
+
+    <default revision="master" remote="github" sync-j="8"/>
+
+    <project name="JobCatcher.git" remote="github" path="job/jobcatcher" revision="unstable">
+    <copyfile src="README.md" dest="README.md" />
+    </project>
+
+    <project name="emploi.git" remote="github" path="job/emploi" />
+    <project name="SHOUTcast-Recorder.git" remote="github" path="dev/SHOUTcast-Recorder" />
+    <project name="adbd.git" remote="github" path="dev/adbd" revision="gingerbread-adbd" />
+    <project name="buildroot.git" remote="buildroot" path="dev/buildroot" />
+
+</manifest>
